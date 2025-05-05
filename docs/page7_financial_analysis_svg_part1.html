@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乾汽船株式会社 総合分析レポート - 財務分析 (1)</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #1a5276;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #2874a6;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .highlight {
+            background-color: #e8f5e9;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .warning {
+            background-color: #fff9c4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .danger {
+            background-color: #ffcdd2;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        svg {
+            display: block;
+            margin: 20px auto;
+        }
+        .description {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        .page-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .page-nav a {
+            text-decoration: none;
+            color: #3498db;
+            padding: 10px 15px;
+            border: 1px solid #3498db;
+            border-radius: 5px;
+        }
+        .page-nav a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>財務分析：業績推移と財務健全性・成長性の評価 (1)</h1>
+        
+        <h2>業績推移</h2>
+        
+        <svg width="900" height="500" xmlns="http://www.w3.org/2000/svg">
+            <!-- 背景 -->
+            <rect x="10" y="10" width="880" height="480" rx="10" ry="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+            
+            <!-- タイトル -->
+            <text x="450" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a5276">乾汽船の売上高・営業利益の推移（2021-2025年3月期）</text>
+            
+            <!-- グラフエリア -->
+            <rect x="100" y="80" width="700" height="300" fill="white" stroke="#ddd" stroke-width="1"/>
+            
+            <!-- X軸 -->
+            <line x1="100" y1="380" x2="800" y2="380" stroke="#333" stroke-width="2"/>
+            
+            <!-- X軸ラベル -->
+            <text x="170" y="400" text-anchor="middle" font-size="14" fill="#333">2021</text>
+            <line x1="170" y1="380" x2="170" y2="385" stroke="#333" stroke-width="1"/>
+            
+            <text x="310" y="400" text-anchor="middle" font-size="14" fill="#333">2022</text>
+            <line x1="310" y1="380" x2="310" y2="385" stroke="#333" stroke-width="1"/>
+            
+            <text x="450" y="400" text-anchor="middle" font-size="14" fill="#333">2023</text>
+            <line x1="450" y1="380" x2="450" y2="385" stroke="#333" stroke-width="1"/>
+            
+            <text x="590" y="400" text-anchor="middle" font-size="14" fill="#333">2024</text>
+            <line x1="590" y1="380" x2="590" y2="385" stroke="#333" stroke-width="1"/>
+            
+            <text x="730" y="400" text-anchor="middle" font-size="14" fill="#333">2025予</text>
+            <line x1="730" y1="380" x2="730" y2="385" stroke="#333" stroke-width="1"/>
+            
+            <text x="450" y="430" text-anchor="middle" font-size="16" fill="#333">年度（3月期）</text>
+            
+            <!-- Y軸（売上高） -->
+            <line x1="100" y1="80" x2="100" y2="380" stroke="#333" stroke-width="2"/>
+            
+            <!-- Y軸ラベル（売上高） -->
+            <text x="70" y="80" text-anchor="end" font-size="14" fill="#3498db">500億円</text>
+            <line x1="95" y1="80" x2="100" y2="80" stroke="#333" stroke-width="1"/>
+            
+            <text x="70" y="140" text-anchor="end" font-size="14" fill="#3498db">400億円</text>
+            <line x1="95" y1="140" x2="100" y2="140" stroke="#333" stroke-width="1"/>
+            
+            <text x="70" y="200" text-anchor="end" font-size="14" fill="#3498db">300億円</text>
+            <line x1="95" y1="200" x2="100" y2="200" stroke="#333" stroke-width="1"/>
+            
+            <text x="70" y="260" text-anchor="end" font-size="14" fill="#3498db">200億円</text>
+            <line x1="95" y1="260" x2="100" y2="260" stroke="#333" stroke-width="1"/>
+            
+            <text x="70" y="320" text-anchor="end" font-size="14" fill="#3498db">100億円</text>
+            <line x1="95" y1="320" x2="100" y2="320" stroke="#333" stroke-width="1"/>
+            
+            <text x="70" y="380" text-anchor="end" font-size="14" fill="#3498db">0億円</text>
+            <line x1="95" y1="380" x2="100" y2="380" stroke="#333" stroke-width="1"/>
+            
+            <text x="50" y="230" text-anchor="middle" font-size="16" fill="#3498db" transform="rotate(-90, 50, 230)">売上高</text>
+            
+            <!-- Y軸（営業利益） -->
+            <line x1="800" y1="80" x2="800" y2="380" stroke="#333" stroke-width="2"/>
+            
+            <!-- Y軸ラベル（営業利益） -->
+            <text x="830" y="80" text-anchor="start" font-size="14" fill="#e74c3c">140億円</text>
+            <line x1="800" y1="80" x2="805" y2="80" stroke="#333" stroke-width="1"/>
+            
+            <text x="830" y="140" text-anchor="start" font-size="14" fill="#e74c3c">100億円</text>
+            <line x1="800" y1="140" x2="805" y2="140" stroke="#333" stroke-width="1"/>
+            
+            <text x="830" y="200" text-anchor="start" font-size="14" fill="#e74c3c">60億円</text>
+            <line x1="800" y1="200" x2="805" y2="200" stroke="#333" stroke-width="1"/>
+            
+            <text x="830" y="260" text-anchor="start" font-size="14" fill="#e74c3c">20億円</text>
+            <line x1="800" y1="260" x2="805" y2="260" stroke="#333" stroke-width="1"/>
+            
+            <text x="830" y="320" text-anchor="start" font-size="14" fill="#e74c3c">-20億円</text>
+            <line x1="800" y1="320" x2="805" y2="320" stroke="#333" stroke-width="1"/>
+            
+            <text x="850" y="230" text-anchor="middle" font-size="16" fill="#e74c3c" transform="rotate(-90, 850, 230)">営業利益</text>
+            
+            <!-- 売上高バー -->
+            <rect x="140" y="320" width="60" height="60" fill="#3498db" opacity="0.7"/>
+            <rect x="280" y="200" width="60" height="180" fill="#3498db" opacity="0.7"/>
+            <rect x="420" y="170" width="60" height="210" fill="#3498db" opacity="0.7"/>
+            <rect x="560" y="240" width="60" height="140" fill="#3498db" opacity="0.7"/>
+            <rect x="700" y="220" width="60" height="160" fill="#3498db" opacity="0.7" stroke="#333" stroke-width="1" stroke-dasharray="5,5"/>
+            
+            <!-- 売上高数値 -->
+            <text x="170" y="310" text-anchor="middle" font-size="14" fill="#333">188.79</text>
+            <text x="310" y="190" text-anchor="middle" font-size="14" fill="#333">375.97</text>
+            <text x="450" y="160" text-anchor="middle" font-size="14" fill="#333">442.67</text>
+            <text x="590" y="230" text-anchor="middle" font-size="14" fill="#333">294.94</text>
+            <text x="730" y="210" text-anchor="middle" font-size="14" fill="#333">350.00</text>
+            
+            <!-- 営業利益線 -->
+            <polyline points="170,322 310,140 450,120 590,260 730,200" fill="none" stroke="#e74c3c" stroke-width="3"/>
+            <circle cx="170" cy="322" r="5" fill="#e74c3c"/>
+            <circle cx="310" cy="140" r="5" fill="#e74c3c"/>
+            <circle cx="450" cy="120" r="5" fill="#e74c3c"/>
+            <circle cx="590" cy="260" r="5" fill="#e74c3c"/>
+            <circle cx="730" cy="200" r="5" fill="#e74c3c" stroke="#333" stroke-width="1" stroke-dasharray="2,2"/>
+            
+            <!-- 営業利益数値 -->
+            <text x="170" y="340" text-anchor="middle" font-size="14" fill="#e74c3c">-1.14</text>
+            <text x="310" y="130" text-anchor="middle" font-size="14" fill="#e74c3c">111.77</text>
+            <text x="450" y="110" text-anchor="middle" font-size="14" fill="#e74c3c">130.67</text>
+            <text x="590" y="250" text-anchor="middle" font-size="14" fill="#e74c3c">16.78</text>
+            <text x="730" y="190" text-anchor="middle" font-size="14" fill="#e74c3c">60.00</text>
+            
+            <!-- 凡例 -->
+            <rect x="300" y="440" width="15" height="15" fill="#3498db" opacity="0.7"/>
+            <text x="325" y="453" text-anchor="start" font-size="14" fill="#333">売上高（億円）</text>
+            
+            <line x1="450" y1="440" x2="490" y2="440" stroke="#e74c3c" stroke-width="3"/>
+            <circle cx="470" cy="440" r="5" fill="#e74c3c"/>
+            <text x="500" y="445" text-anchor="start" font-size="14" fill="#333">営業利益（億円）</text>
+        </svg>
+        
+        <div class="description">
+            <p>乾汽船の業績は、海運市況の影響を強く受けています。2021年3月期はコロナ禍の影響で低迷していましたが、2022年3月期から2023年3月期にかけては<span class="highlight">世界的な海運ブームにより大幅に業績が向上</span>しました。2024年3月期は市況の反動減により減収減益となりましたが、<span class="warning">不動産事業の利益や保有船売却益</span>により下支えされています。2025年3月期は緩やかな回復が見込まれています。</p>
+        </div>
+        
+        <h2>業績変動の要因分析</h2>
+        
+        <svg width="900" height="500" xmlns="http://www.w3.org/2000/svg">
+            <!-- 背景 -->
+            <rect x="10" y="10" width="880" height="480" rx="10" ry="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+            
+            <!-- タイトル -->
+            <text x="450" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a5276">業績変動の要因分析</text>
+            
+            <!-- 2021年3月期 -->
+            <rect x="50" y="70" width="180" height="180" rx="5" ry="5" fill="white" stroke="#ddd" stroke-width="1"/>
+            <rect x="50" y="70" width="180" height="30" rx="5" ry="5" fill="#3498db" stroke="#2874a6" stroke-width="1"/>
+            <text x="140" y="90" text-anchor="middle" font-size="16" font-weight="bold" fill="white">2021年3月期</text>
+            
+            <text x="60" y="120" text-anchor="start" font-size="14" fill="#333">売上高: 188.79億円</text>
+            <text x="60" y="150" text-anchor="start" font-size="14" fill="#333">営業損失: 1.14億円</text>
+            <text x="60" y="180" text-anchor="start" font-size="14" fill="#333">当期純損失: 11.86億円</text>
+            <rect x="60" y="200" width="160" height="30" rx="3" ry="3" fill="#ffcdd2" stroke="#e57373" stroke-width="1"/>
+            <text x="140" y="220" text-anchor="middle" font-size="14" fill="#333">コロナ禍で低迷</text>
+            
+            <!-- 2022年3月期 -->
+            <rect x="250" y="70" width="180" height="180" rx="5" ry="5" fill="white" stroke="#ddd" stroke-width="1"/>
+            <rect x="250" y="70" width="180" height="30" rx="5" ry="5" fill="#3498db" stroke="#2874a6" stroke-width="1"/>
+            <text x="340" y="90" text-anchor="middle" font-size="16" font-weight="bold" fill="white">2022年3月期</text>
+            
+            <text x="260" y="120" text-anchor="start" font-size="14" fill="#333">売上高: 375.97億円</text>
+            <text x="260" y="140" text-anchor="start" font-size="14" fill="#333">前期比: +99.1%</text>
+            <text x="260" y="170" text-anchor="start" font-size="14" fill="#333">営業利益: 111.77億円</text>
+            <text x="260" y="200" text-anchor="start" font-size="14" fill="#333">当期純利益: 118.48億円</text>
+            <rect x="260" y="220" width="160" height="30" rx="3" ry="3" fill="#e8f5e9" stroke="#81c784" stroke-width="1"/>
+            <text x="340" y="240" text-anchor="middle" font-size="14" fill="#333">世界的な海運ブーム</text>
+            
+            <!-- 2023年3月期 -->
+            <rect x="450" y="70" width="180" height="180" rx="5" ry="5" fill="white" stroke="#ddd" stroke-width="1"/>
+            <rect x="450" y="70" width="180" height="30" rx="5" ry="5" fill="#3498db" stroke="#2874a6" stroke-width="1"/>
+            <text x="540" y="90" text-anchor="middle" font-size="16" font-weight="bold" fill="white">2023年3月期</text>
+            
+            <text x="460" y="120" text-anchor="start" font-size="14" fill="#333">売上高: 442.67億円</text>
+            <text x="460" y="140" text-anchor="start" font-size="14" fill="#333">前期比: +17.7%</text>
+            <text x="460" y="170" text-anchor="start" font-size="14" fill="#333">営業利益: 130.67億円</text>
+            <text x="460" y="200" text-anchor="start" font-size="14" fill="#333">当期純利益: 98.57億円</text>
+            <rect x="460" y="220" width="160" height="30" rx="3" ry="3" fill="#e8f5e9" stroke="#81c784" stroke-width="1"/>
+            <text x="540" y="240" text-anchor="middle" font-size="14" fill="#333">高水準の業績維持</text>
+            
+            <!-- 2024年3月期 -->
+            <rect x="650" y="70" width="180" height="180" rx="5" ry="5" fill="white" stroke="#ddd" stroke-width="1"/>
+            <rect x="650" y="70" width="180" height="30" rx="5" ry="5" fill="#3498db" stroke="#2874a6" stroke-width="1"/>
+            <text x="740" y="90" text-anchor="middle" font-size="16" font-weight="bold" fill="white">2024年3月期</text>
+            
+            <text x="660" y="120" text-anchor="start" font-size="14" fill="#333">売上高: 294.94億円</text>
+            <text x="660" y="140" text-anchor="start" font-size="14" fill="#333">前期比: ▲33.4%</text>
+            <text x="660" y="170" text-anchor="start" font-size="14" fill="#333">営業利益: 16.78億円</text>
+            <text x="660" y="190" text-anchor="start" font-size="14" fill="#333">前期比: ▲87.2%</text>
+            <text x="660" y="220" text-anchor="start" font-size="14" fill="#333">当期純利益: 11.94億円</text>
+            
+            <rect x="50" y="280" width="780" height="30" rx="3" ry="3" fill="#ffcdd2" stroke="#e57373" stroke-width="1"/>
+            <text x="440" y="300" text-anchor="middle" font-size="16" fill="#333">2024年3月期：市況反動減</text>
+            
+            <rect x="50" y="320" width="780" height="30" rx="3" ry="3" fill="#fff9c4" stroke="#ffd54f" stroke-width="1"/>
+            <text x="440" y="340" text-anchor="middle" font-size="16" fill="#333">不動産事業の利益や保有船売却益で下支え</text>
+            
+            <!-- 財務指標 -->
+            <rect x="50" y="370" width="380" height="100" rx="5" ry="5" fill="white" stroke="#ddd" stroke-width="1"/>
+            <text x="60" y="390" text-anchor="start" font-size="14" font-weight="bold" fill="#1a5276">主要財務指標（2023年3月期）</text>
+            <text x="60" y="420" text-anchor="start" font-size="14" fill="#333">・ROE（自己資本利益率）: 約30.8%</text>
+            <text x="60" y="450" text-anchor="start" font-size="14" fill="#333">・自己資本比率: 約49.0%</text>
+            
+            <rect x="450" y="370" width="380" height="100" rx="5" ry="5" fill="white" stroke="#ddd" stroke-width="1"/>
+            <text x="460" y="390" text-anchor="start" font-size="14" font-weight="bold" fill="#1a5276">主要財務指標（2024年3月期）</text>
+            <text x="460" y="420" text-anchor="start" font-size="14" fill="#333">・ROE（自己資本利益率）: 約3.6%</text>
+            <text x="460" y="450" text-anchor="start" font-size="14" fill="#333">・自己資本比率: 約47.5%</text>
+        </svg>
+        
+        <div class="description">
+            <p>乾汽船の業績は、2021年3月期のコロナ禍による低迷から、2022年3月期には<span class="highlight">売上高が前期比99.1%増</span>と大幅に回復しました。2023年3月期も高水準の業績を維持し、<span class="highlight">ROEは約30.8%</span>と極めて高い水準を記録しました。しかし、2024年3月期は<span class="danger">市況の反動減</span>により減収減益となりましたが、<span class="warning">不動産事業の利益や保有船売却益</span>により一定の利益水準を確保しています。自己資本比率は約47.5%と<span class="highlight">財務健全性は維持</span>されています。</p>
+        </div>
+        
+        <div class="page-nav">
+            <a href="page6_business_strategy_svg.html">前のページ：事業戦略分析</a>
+            <a href="page7_financial_analysis_svg_part2.html">次のページ：財務分析 (2)</a>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 乾汽船株式会社 総合分析レポート</p>
+        </div>
+    </div>
+</body>
+</html>

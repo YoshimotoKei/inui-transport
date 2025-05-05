@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乾汽船株式会社 総合分析レポート - SVG版</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #1a5276;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #2874a6;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .highlight {
+            background-color: #e8f5e9;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .warning {
+            background-color: #fff9c4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .danger {
+            background-color: #ffcdd2;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        svg {
+            display: block;
+            margin: 20px auto;
+        }
+        .description {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        .page-list {
+            margin: 30px 0;
+        }
+        .page-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+        .page-item:hover {
+            background-color: #e8f5e9;
+            transform: translateX(5px);
+        }
+        .page-number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        .page-content {
+            flex-grow: 1;
+        }
+        .page-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2874a6;
+            margin-bottom: 5px;
+        }
+        .page-desc {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .color-legend {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        .color-item {
+            display: flex;
+            align-items: center;
+            margin: 0 15px;
+        }
+        .color-box {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>乾汽船株式会社 総合分析レポート<br>SVG図表版</h1>
+        
+        <div class="description">
+            <p>本資料は乾汽船株式会社の総合分析レポートをSVG形式で図示化したものです。各ページはインタラクティブな図表を用いて、乾汽船の事業内容や財務状況、市場環境などを視覚的に表現しています。</p>
+        </div>
+        
+        <svg width="900" height="300" xmlns="http://www.w3.org/2000/svg">
+            <!-- 背景 -->
+            <rect x="10" y="10" width="880" height="280" rx="10" ry="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+            
+            <!-- 中心円 -->
+            <circle cx="450" cy="150" r="100" fill="#2874a6" opacity="0.1"/>
+            <circle cx="450" cy="150" r="90" fill="#2874a6" opacity="0.2"/>
+            <text x="450" y="155" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a5276">乾汽船</text>
+            
+            <!-- 特徴1 -->
+            <circle cx="200" cy="100" r="70" fill="#e8f5e9" stroke="#81c784" stroke-width="2"/>
+            <text x="200" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e7d32">業界構造</text>
+            <text x="200" y="110" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e7d32">市場環境</text>
+            <line x1="270" y1="100" x2="360" y2="130" stroke="#81c784" stroke-width="2"/>
+            
+            <!-- 特徴2 -->
+            <circle cx="200" cy="220" r="70" fill="#e8f5e9" stroke="#81c784" stroke-width="2"/>
+            <text x="200" y="210" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e7d32">競合分析</text>
+            <text x="200" y="230" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e7d32">事業構造</text>
+            <line x1="270" y1="220" x2="360" y2="170" stroke="#81c784" stroke-width="2"/>
+            
+            <!-- 特徴3 -->
+            <circle cx="700" cy="100" r="70" fill="#e8f5e9" stroke="#81c784" stroke-width="2"/>
+            <text x="700" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e7d32">事業戦略</text>
+            <text x="700" y="110" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e7d32">成長戦略</text>
+            <line x1="630" y1="100" x2="540" y2="130" stroke="#81c784" stroke-width="2"/>
+            
+            <!-- 特徴4 -->
+            <circle cx="700" cy="220" r="70" fill="#fff9c4" stroke="#ffd54f" stroke-width="2"/>
+            <text x="700" y="210" text-anchor="middle" font-size="14" font-weight="bold" fill="#f57f17">財務分析</text>
+            <text x="700" y="230" text-anchor="middle" font-size="14" font-weight="bold" fill="#f57f17">将来展望</text>
+            <line x1="630" y1="220" x2="540" y2="170" stroke="#ffd54f" stroke-width="2"/>
+        </svg>
+        
+        <div class="color-legend">
+            <div class="color-item">
+                <div class="color-box" style="background-color: #e8f5e9;"></div>
+                <span>強み・ポジティブ要素</span>
+            </div>
+            <div class="color-item">
+                <div class="color-box" style="background-color: #fff9c4;"></div>
+                <span>重要ポイント・注目要素</span>
+            </div>
+            <div class="color-item">
+                <div class="color-box" style="background-color: #ffcdd2;"></div>
+                <span>リスク・課題</span>
+            </div>
+        </div>
+        
+        <h2>レポート目次</h2>
+        
+        <div class="page-list">
+            <a href="page1_cover_svg.html">
+                <div class="page-item">
+                    <div class="page-number">1</div>
+                    <div class="page-content">
+                        <div class="page-title">表紙・概要</div>
+                        <div class="page-desc">乾汽船の基本情報と分析レポートの概要</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="page2_industry_structure_svg.html">
+                <div class="page-item">
+                    <div class="page-number">2</div>
+                    <div class="page-content">
+                        <div class="page-title">業界構造</div>
+                        <div class="page-desc">海運・物流業界の全体像と主要論点</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="page3_market_environment_svg.html">
+                <div class="page-item">
+                    <div class="page-number">3</div>
+                    <div class="page-content">
+                        <div class="page-title">市場環境</div>
+                        <div class="page-desc">グローバル海運市場の動向と地政学的要因</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="page4_competitive_analysis_svg.html">
+                <div class="page-item">
+                    <div class="page-number">4</div>
+                    <div class="page-content">
+                        <div class="page-title">競合分析</div>
+                        <div class="page-desc">主要国内外プレイヤーとビジネスモデル比較</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="page5_business_structure_svg.html">
+                <div class="page-item">
+                    <div class="page-number">5</div>
+                    <div class="page-content">
+                        <div class="page-title">事業構造 (1)</div>
+                        <div class="page-desc">乾汽船の事業セグメントと収益構造</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="page5_business_structure_svg_part2.html">
+                <div class="page-item">
+                    <div class="page-number">6</div>
+                    <div class="page-content">
+                        <div class="page-title">事業構造 (2)</div>
+                        <div class="page-desc">倉庫・運送事業と不動産戦略</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="page6_business_strategy_svg.html">
+                <div class="page-item">
+                    <div class="page-number">7</div>
+                    <div class="page-content">
+                        <div class="page-title">事業戦略分析</div>
+                        <div class="page-desc">中期経営計画と成長戦略・リスク管理</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="page7_financial_analysis_svg_part1.html">
+                <div class="page-item">
+                    <div class="page-number">8</div>
+                    <div class="page-content">
+                        <div class="page-title">財務分析 (1)</div>
+                        <div class="page-desc">業績推移と業績変動の要因分析</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="page7_financial_analysis_svg_part2.html">
+                <div class="page-item">
+                    <div class="page-number">9</div>
+                    <div class="page-content">
+                        <div class="page-title">財務分析 (2)</div>
+                        <div class="page-desc">財務健全性・成長性の評価と総合評価</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <h2>使用方法</h2>
+        
+        <div class="description">
+            <p>各ページはHTMLファイルとして作成されており、ウェブブラウザで開くことで閲覧できます。SVG形式の図表は、高解像度でスケーラブルな表現が可能で、印刷にも適しています。</p>
+            <p>色分けについては以下の通りです：</p>
+            <ul>
+                <li><span class="highlight">緑色</span>: 強み・ポジティブ要素</li>
+                <li><span class="warning">黄色</span>: 重要ポイント・注目要素</li>
+                <li><span class="danger">赤色</span>: リスク・課題</li>
+            </ul>
+            <p>※このSVG版は、Mermaid版と同じ内容を異なる表現方法で視覚化したものです。</p>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 乾汽船株式会社 総合分析レポート</p>
+        </div>
+    </div>
+</body>
+</html>
